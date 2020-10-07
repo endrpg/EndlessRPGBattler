@@ -17,5 +17,6 @@ MonoBehaviour:
   iconSprite: {fileID: -6577939328453786373, guid: fbb773a19ccb32849aa94e84a99b5975,
     type: 3}
   healPower: 0
-  amount: 0
+  amount: 7
+  price: 10
   magicPower: 0

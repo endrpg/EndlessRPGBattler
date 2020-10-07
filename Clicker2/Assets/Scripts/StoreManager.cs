@@ -10,6 +10,10 @@ public class StoreManager : MonoBehaviour
     public GameObject slotPrefab;
     void Start()
     {
+        RandomiseStore();
+    }
+    public void RandomiseStore()
+    {
         for(int i = 0; i < 2;i+=1)
         {
             int presentIcon = Random.Range(0,allIcons.Count);
@@ -28,6 +32,7 @@ public class StoreManager : MonoBehaviour
             var prefabInstantiated = (GameObject)Instantiate(slotPrefab,transform.position,Quaternion.identity);
             prefabInstantiated.transform.SetParent(parentPanel.transform,false);
             prefabInstantiated.GetComponent<Image>().sprite = item.iconSprite;
+            prefabInstantiated.GetComponent<ToreButtonScript>().myStoreObj = item;
         }
     }
 }

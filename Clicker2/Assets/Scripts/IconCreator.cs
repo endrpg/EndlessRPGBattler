@@ -10,5 +10,7 @@ public class IconCreator : ScriptableObject
     public Sprite iconSprite;
     public float healPower;
     public float amount;
+    public float price;
+    public bool infinite;
     public float magicPower;
 }
