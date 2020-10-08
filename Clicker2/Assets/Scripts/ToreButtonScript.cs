@@ -25,7 +25,11 @@ public class ToreButtonScript : MonoBehaviour
     }
     void UpdateText()
     {
-        amount.text = myStoreObj.amount.ToString();
+        amount.text = myStoreObj.maxAmount.ToString();
+        if(myStoreObj.maxAmount == 1)
+        {
+            amount.text = "";
+        }
     }
     void Buy()
     {

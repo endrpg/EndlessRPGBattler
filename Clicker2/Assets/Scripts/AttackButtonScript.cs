@@ -8,6 +8,7 @@ public class AttackButtonScript : MonoBehaviour
     public IconCreator myObj;
     Button me;
     public TextMeshProUGUI amount;
+    public float itemNo;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,19 +27,34 @@ public class AttackButtonScript : MonoBehaviour
     }
     void AttackingEnemy()
     {
-        GameManager.Instance.DoDamage(GameManager.Instance.player.attack + myObj.attackPower);
-        if(!myObj.infinite)
+        if(myObj.amount > 0)
         {
-            myObj.amount -=1;
+            GameManager.Instance.DoDamage(GameManager.Instance.player.attack + myObj.attackPower);
+            if(!myObj.infinite)
+            {
+                myObj.amount -=1;
+            }
+            GameManager.Instance.currentTurn = false;
         }
-        GameManager.Instance.currentTurn = false;
+        if(myObj.amount <= 0)
+        {
+            GameManager.Instance.myPowerups.RemoveAt((int)itemNo);
+            Destroy(this.gameObject);
+        }
     }
     void UpdateText()
     {
         if(!myObj.infinite)
         {
             amount = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-            amount.text = myObj.amount.ToString();
+            if(myObj.amount > 1)
+            {
+                amount.text = myObj.amount.ToString();
+            }
+            if(myObj.amount == 1)
+            {
+                amount.text = "";
+            }
         }
         if(myObj.infinite)
         {
