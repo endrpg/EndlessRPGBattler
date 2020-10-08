@@ -10,7 +10,30 @@ public class IconCreator : ScriptableObject
     public Sprite iconSprite;
     public float healPower;
     public float amount;
+    public float maxAmount;
     public float price;
     public bool infinite;
-    public float magicPower;
+    public float permanenntStrengthInc;
+    public float permanenntDefenseInc;
+    public float hpIncrease;
+    public float lifeIncrease;
+    [System.Serializable]
+    public enum Tiers
+    {
+        Tier1,
+        Tier2,
+        Tier3,
+        Tier4,
+        Tier5
+    }
+    [System.Serializable]
+    public enum Type
+    {
+        Earth,
+        Fire,
+        Cold,
+        Normal
+    }
+    public Tiers tiers;
+    public Type type;
 }
