@@ -29,13 +29,24 @@ public class confirmScript : MonoBehaviour
         if(GameManager.Instance.ReturnGold() >= myObj.price)
         {
             GameManager.Instance.RemoveGold(myObj.price);
-            if(!GameManager.Instance.myPowerups.Contains(myObj))
+            if((int)myObj.equipment == 0)
             {
-                GameManager.Instance.myPowerups.Add(myObj);
+                if(!GameManager.Instance.myPowerups.Contains(myObj))
+                {
+                    GameManager.Instance.myPowerups.Add(myObj);
+                }
+                else if(GameManager.Instance.myPowerups.Contains(myObj))
+                {
+                    myObj.amount += myObj.maxAmount;
+                }
             }
-            else if(GameManager.Instance.myPowerups.Contains(myObj))
+            else if((int)myObj.equipment > 0 && !(EquipmentManager.Instance.Equipment.Contains(myObj)))
             {
-                myObj.amount += myObj.maxAmount;
+                EquipmentManager.Instance.Equipment.Add(myObj);
+            }
+            else if((int)myObj.equipment > 0 && EquipmentManager.Instance.Equipment.Contains(myObj))
+            {
+                GameManager.Instance.AddGold(myObj.price);
             }
             if(cashRegister != null)
             {

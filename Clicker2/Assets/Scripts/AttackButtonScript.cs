@@ -34,6 +34,12 @@ public class AttackButtonScript : MonoBehaviour
             {
                 myObj.amount -=1;
             }
+            if(myObj.effect != null)
+            {
+                GameObject effect = Instantiate(myObj.effect,new Vector2(31,422),Quaternion.identity);
+                effect.transform.SetParent(GameObject.Find("War Panel").transform,false);
+                Destroy(effect,1f);
+            }
             GameManager.Instance.currentTurn = false;
         }
         if(myObj.amount <= 0)

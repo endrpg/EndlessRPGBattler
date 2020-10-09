@@ -17,7 +17,7 @@ MonoBehaviour:
   iconSprite: {fileID: 5677346126495799827, guid: fbb773a19ccb32849aa94e84a99b5975,
     type: 3}
   healPower: 0
-  amount: 0
+  amount: 1
   maxAmount: 5
   price: 40
   infinite: 0
@@ -25,5 +25,7 @@ MonoBehaviour:
   permanenntDefenseInc: 0
   hpIncrease: 0
   lifeIncrease: 0
+  effect: {fileID: 1596263271570155293, guid: 82c79f44143d35f4e9e09e82b66f1ec4, type: 3}
   tiers: 1
   type: 0
+  equipment: 0

@@ -41,6 +41,7 @@ public class EquipmentManager : MonoBehaviour
         {
             GameObject equipmentSlots = Instantiate(slotPrefab,transform.position,Quaternion.identity);
             equipmentSlots.transform.SetParent(parentPanel.transform,false);
+            equipmentSlots.GetComponent<EquipmentScript>().meObj = item;
         }
     }
     void SpriteEx(GameObject sp,IconCreator ic)

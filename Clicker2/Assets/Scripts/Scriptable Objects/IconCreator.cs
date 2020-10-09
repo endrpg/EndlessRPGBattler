@@ -17,6 +17,7 @@ public class IconCreator : ScriptableObject
     public float permanenntDefenseInc;
     public float hpIncrease;
     public float lifeIncrease;
+    public GameObject effect;
     [System.Serializable]
     public enum Tiers
     {

@@ -81,4 +81,8 @@ public class GameManager : MonoBehaviour
     {
         return gold;
     }
+    public void AddGold(float coins)
+    {
+        gold += coins;
+    }
 }
