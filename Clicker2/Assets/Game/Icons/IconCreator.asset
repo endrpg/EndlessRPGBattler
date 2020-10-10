@@ -16,7 +16,7 @@ MonoBehaviour:
   defense: 0
   iconSprite: {fileID: 0}
   healPower: 0
-  amount: 5
+  amount: 0
   maxAmount: 5
   price: 20
   infinite: 0
@@ -24,5 +24,7 @@ MonoBehaviour:
   permanenntDefenseInc: 0
   hpIncrease: 0
   lifeIncrease: 0
+  effect: {fileID: 0}
   tiers: 2
   type: 0
+  equipment: 0

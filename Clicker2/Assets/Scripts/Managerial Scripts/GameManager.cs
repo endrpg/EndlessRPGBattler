@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public bool currentTurn = false;
     public Player player;
     public Enemy enemy;
-    float gold = 100;
+    [SerializeField]float gold = 100;
     public GameObject parentPanel;
     public List<IconCreator> myPowerups;
     public GameObject slotPrefab;

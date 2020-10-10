@@ -34,6 +34,7 @@ public class confirmScript : MonoBehaviour
                 if(!GameManager.Instance.myPowerups.Contains(myObj))
                 {
                     GameManager.Instance.myPowerups.Add(myObj);
+                    myObj.amount += myObj.maxAmount;
                 }
                 else if(GameManager.Instance.myPowerups.Contains(myObj))
                 {
