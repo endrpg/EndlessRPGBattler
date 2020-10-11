@@ -690,6 +690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack: 5
   health: 100
+  defense: 10
 --- !u!4 &393869876
 Transform:
   m_ObjectHideFlags: 0
@@ -1129,8 +1130,14 @@ MonoBehaviour:
   gold: 100
   parentPanel: {fileID: 8134943458010416215}
   myPowerups: []
+  Tier1Enemy: []
+  Tier2Enemy: []
+  Tier3Enemy: []
+  myEnemyObj: {fileID: 0}
+  enemyPrefab: {fileID: 0}
   slotPrefab: {fileID: 4089983713971641750, guid: 984e075bc5e1d224d8f569a3ad29f1ba,
     type: 3}
+  tempType: 0
 --- !u!4 &651230988
 Transform:
   m_ObjectHideFlags: 0
@@ -2053,8 +2060,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b807a12359f8eb45ad172d483a2ef25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attack: 5
-  health: 100
+  permanentHp: 100
+  currentHp: 100
+  permStrength: 10
+  permDefense: 10
 --- !u!4 &1348202126
 Transform:
   m_ObjectHideFlags: 0

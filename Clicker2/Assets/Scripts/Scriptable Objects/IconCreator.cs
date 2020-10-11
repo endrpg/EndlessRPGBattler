@@ -5,7 +5,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "IconCreator", menuName = "Icon/New Icon")]
 public class IconCreator : ScriptableObject
 {
-    public float attackPower;
+    public float strength;
     public float defense;
     public Sprite iconSprite;
     public float healPower;

@@ -17,13 +17,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public bool currentTurn = false;
+    public bool currentTurn = true;
     public Player player;
     public Enemy enemy;
     [SerializeField]float gold = 100;
     public GameObject parentPanel;
     public List<IconCreator> myPowerups;
+    public List<GeneralEnemy> Tier1Enemy;
+    public List<GeneralEnemy> Tier2Enemy;
+    public List<GeneralEnemy> Tier3Enemy;
+    public GeneralEnemy myEnemyObj;
+    public GameObject enemyPrefab;
     public GameObject slotPrefab;
+    public int tempType; // Received from attackButtonSccript
     void Awake()
     {
         instance = this;
@@ -38,13 +44,26 @@ public class GameManager : MonoBehaviour
         if(!currentTurn)
         {
             currentTurn = true;
-            player.health -= damage;
-            Debug.Log("Player " + player.health);
+            player.currentHp -= damage - (Random.value * player.permDefense);
+            Debug.Log("Player " + player.currentHp);
         }
         else if(currentTurn)
         {
             currentTurn = false;
-            enemy.health -= damage;
+            if(tempType != -1 && tempType == (int)myEnemyObj.weakAgainst)
+            {
+                enemy.health -= (Random.value+1) *damage -(Random.value * enemy.defense);
+                tempType = -1;
+            }
+            else if(tempType != -1 && tempType == (int)myEnemyObj.strongAgainst)
+            {
+                enemy.health -= (Random.value) *damage;
+                tempType = -1;
+            }
+            else
+            {
+                enemy.health -= damage;
+            }
             Debug.Log("Enemy " + enemy.health);
         }
     }
@@ -71,6 +90,21 @@ public class GameManager : MonoBehaviour
             }
             number += 1;
         }
+    }
+    void EnemyRandomise()
+    {
+        int randomNum = Random.Range(0,Tier1Enemy.Count);
+        currentTurn = true;
+        enemy = null;
+        myEnemyObj = Tier1Enemy[randomNum];
+        GameObject enemyG = (GameObject)Instantiate(enemyPrefab,new Vector2(31,370),Quaternion.identity);
+        enemyG.transform.SetParent(GameObject.Find("War Panel").transform,false);
+        enemyG.GetComponent<Image>().sprite = myEnemyObj.enemySprite;
+        enemy = enemyG.GetComponent<Enemy>();
+        enemy.attack = myEnemyObj.attack;
+        enemy.health = myEnemyObj.health;
+        enemy.defense = myEnemyObj.defense;
+
     }
     //Gold Related methods
     public void RemoveGold(float coins)

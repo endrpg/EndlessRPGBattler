@@ -29,7 +29,11 @@ public class AttackButtonScript : MonoBehaviour
     {
         if(myObj.amount > 0)
         {
-            GameManager.Instance.DoDamage(GameManager.Instance.player.attack + myObj.attackPower);
+            if((int)myObj.type != 3)
+            {
+                GameManager.Instance.tempType = (int)myObj.type;
+            }
+            GameManager.Instance.DoDamage(GameManager.Instance.player.permStrength + myObj.strength);
             if(!myObj.infinite)
             {
                 myObj.amount -=1;
