@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float currentHp  = 100f;
     public float permStrength = 10f;
     public float permDefense = 10f;
+    public float accuracyPercent = 100f;
     public GameObject losePanel;
     // Update is called once per frame
     void Update()

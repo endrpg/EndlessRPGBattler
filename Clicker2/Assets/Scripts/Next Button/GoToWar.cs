@@ -23,5 +23,6 @@ public class GoToWar : MonoBehaviour
         toShow.SetActive(true);
         toUnshow.SetActive(false);
         GameManager.Instance.SlotInstantiation();
+        GameManager.Instance.EnemyRandomise();
     }
 }

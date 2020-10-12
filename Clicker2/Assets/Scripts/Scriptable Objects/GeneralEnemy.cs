@@ -25,4 +25,6 @@ public class GeneralEnemy : ScriptableObject
     public float defense;
     public Sprite enemySprite;
     public float attack;
+    public float amountToBeGivenAfterWin;
+    public float evade;
 }

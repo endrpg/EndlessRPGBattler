@@ -37,14 +37,13 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<Player>();
-        enemy = GameObject.Find("Enemy").GetComponent<Enemy>();
     }
     public void DoDamage(float damage)
     {
         if(!currentTurn)
         {
             currentTurn = true;
-            player.currentHp -= damage - (Random.value * player.permDefense);
+            player.currentHp -= (float)Mathf.RoundToInt(damage - (Random.value * player.permDefense));
             Debug.Log("Player " + player.currentHp);
         }
         else if(currentTurn)
@@ -52,17 +51,17 @@ public class GameManager : MonoBehaviour
             currentTurn = false;
             if(tempType != -1 && tempType == (int)myEnemyObj.weakAgainst)
             {
-                enemy.health -= (Random.value+1) *damage -(Random.value * enemy.defense);
+                enemy.health -= (float)Mathf.RoundToInt(((player.accuracyPercent/100+1 - enemy.evadePercent/100) *damage) -(Random.value * enemy.defense));
                 tempType = -1;
             }
             else if(tempType != -1 && tempType == (int)myEnemyObj.strongAgainst)
             {
-                enemy.health -= (Random.value) *damage;
+                enemy.health -= (float)Mathf.RoundToInt((player.accuracyPercent/100 - Random.value) *damage);
                 tempType = -1;
             }
             else
             {
-                enemy.health -= damage;
+                enemy.health -= (float)Mathf.RoundToInt(damage);
             }
             Debug.Log("Enemy " + enemy.health);
         }
@@ -91,8 +90,9 @@ public class GameManager : MonoBehaviour
             number += 1;
         }
     }
-    void EnemyRandomise()
+    public void EnemyRandomise()
     {
+        player.currentHp = player.permanentHp;
         int randomNum = Random.Range(0,Tier1Enemy.Count);
         currentTurn = true;
         enemy = null;
@@ -104,6 +104,7 @@ public class GameManager : MonoBehaviour
         enemy.attack = myEnemyObj.attack;
         enemy.health = myEnemyObj.health;
         enemy.defense = myEnemyObj.defense;
+        enemy.evadePercent = myEnemyObj.evade;
 
     }
     //Gold Related methods

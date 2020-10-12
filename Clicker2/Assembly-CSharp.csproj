@@ -42,13 +42,14 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\ConfirmationPanel\DenyScript.cs" />
      <Compile Include="Assets\Scripts\Scriptable Objects\GeneralEnemy.cs" />
+     <Compile Include="Assets\EquipmentScript.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\Managerial Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Managerial Scripts\StoreManager.cs" />
      <Compile Include="Assets\EquipmentManager.cs" />
      <Compile Include="Assets\Scripts\AttackButtonScript.cs" />
      <Compile Include="Assets\Scripts\Scriptable Objects\IconCreator.cs" />
-     <Compile Include="Assets\EquipmentScript.cs" />
+     <Compile Include="Assets\Scripts\Sleeping.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Game\Spells\wind\medium\timing.txt" />
