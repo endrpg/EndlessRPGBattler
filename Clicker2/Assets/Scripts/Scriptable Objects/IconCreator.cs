@@ -5,16 +5,26 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "IconCreator", menuName = "Icon/New Icon")]
 public class IconCreator : ScriptableObject
 {
+    public Sprite iconSprite;
+    public string iconTitle;
+    public string iconDescription;
     public float strength;
     public float defense;
-    public Sprite iconSprite;
+    public float accuracy;
+    public float dodge;
+    public float luck;
+    public float criticalAtkpercentage;
+    public float critmultiplier;
     public float healPower;
     public float amount;
     public float maxAmount;
     public float price;
     public bool infinite;
-    public float permanenntStrengthInc;
-    public float permanenntDefenseInc;
+    public float permanentStrengthInc;
+    public float permanentDefenseInc;
+    public float permanentAccuracyInc;
+    public float permanentDodgeInc;
+    public float permanentLuckinc;
     public float hpIncrease;
     public float lifeIncrease;
     public GameObject effect;
@@ -30,21 +40,39 @@ public class IconCreator : ScriptableObject
     [System.Serializable]
     public enum Type
     {
+        None, 
         Earth,
         Fire,
-        Cold,
+        Water,
+        Wind,
+        Electric,
+        Dark,
+        Holy,
         Normal
     }
     [System.Serializable]
     public enum Equipment
     {
         None,
+        Weapon,
+        Shield,
         Head,
         Chest,
         Torso,
-        Shoes
+        Shoes,
+        Ring
     }
     public Tiers tiers;
     public Type type;
     public Equipment equipment;
+    public WeaponType weapontype;
+    public enum WeaponType
+    {
+        None,
+        axe,
+        lance,
+        dagger,
+        sword,
+        bow
+    }
 }
