@@ -9,6 +9,10 @@ public class Player : MonoBehaviour
     public float permStrength = 10f;
     public float permDefense = 10f;
     public float accuracyPercent = 100f;
+    public float criticalAttackPercentage;
+    public float criticalAttackMultiplier;
+    public float evadePercent = 10f;
+    public float permanentLuck = 10f;
     public GameObject losePanel;
     // Update is called once per frame
     void Update()

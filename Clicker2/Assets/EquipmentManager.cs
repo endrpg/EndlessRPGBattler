@@ -25,10 +25,18 @@ public class EquipmentManager : MonoBehaviour
     public IconCreator chest;
     public IconCreator torso;
     public IconCreator shoes;
+    public IconCreator equipment;
+    public IconCreator shield;
+    public IconCreator ring1;
+    public IconCreator ring2;
     public GameObject headSp;
     public GameObject chestSp;
     public GameObject torsoSp;
     public GameObject shoesSp;
+    public GameObject equipmentSp;
+    public GameObject shieldSp;
+    public GameObject ring1Sp;
+    public GameObject ring2Sp;
     public GameObject slotPrefab;
     public GameObject parentPanel;
     void Update()
@@ -37,6 +45,10 @@ public class EquipmentManager : MonoBehaviour
         SpriteEx(chestSp,chest);
         SpriteEx(torsoSp,torso);
         SpriteEx(shoesSp,shoes);
+        SpriteEx(equipmentSp,equipment);
+        SpriteEx(shieldSp,shield);
+        SpriteEx(ring1Sp,ring1);
+        SpriteEx(ring2Sp,ring2);
         foreach (var item in Equipment)
         {
             GameObject equipmentSlots = Instantiate(slotPrefab,transform.position,Quaternion.identity);

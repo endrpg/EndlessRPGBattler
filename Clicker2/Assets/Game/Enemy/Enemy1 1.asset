@@ -12,10 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b012c33e304d004c9fb6182289537ba, type: 3}
   m_Name: Enemy1 1
   m_EditorClassIdentifier: 
+  enemySprite: {fileID: 21300000, guid: 817926012b3e02d49bc788fc1c5f3068, type: 3}
+  monsterName: 
+  monsterInfo: 
+  health: 100
+  attack: 90
+  defense: 10
+  goldToWin: 0
+  evadePercent: 0
+  criticalAttackPercentage: 0
+  criticalAttackMultiplier: 0
   weakAgainst: 2
   strongAgainst: 0
-  health: 100
-  defense: 10
-  enemySprite: {fileID: 5677346126495799827, guid: fbb773a19ccb32849aa94e84a99b5975,
-    type: 3}
-  attack: 90
+  weakAgainst2: 0
+  strongAgainst2: 0
+  ItemDrop: 0

@@ -12,12 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e2d81d8c1bd5143a99cb489a6f34c2, type: 3}
   m_Name: DefaultWeapon
   m_EditorClassIdentifier: 
-  attackPower: 0
+  iconSprite: {fileID: 21300000, guid: 0609f7e8047586c4ea5dcc235ae68c35, type: 3}
+  iconTitle: 
+  iconDescription: 
+  strength: 0
   defense: 0
-  iconSprite: {fileID: -7128446351557422883, guid: fbb773a19ccb32849aa94e84a99b5975,
-    type: 3}
+  accuracy: 0
+  luckPercent: 0
+  criticalAtkpercentage: 0
+  critmultiplier: 0
   healPower: 0
   amount: 0
+  maxAmount: 5
   price: 0
   infinite: 1
-  magicPower: 0
+  permanentStrengthInc: 0
+  permanentDefenseInc: 0
+  permanentAccuracyInc: 0
+  permanentDodgeInc: 0
+  permanentLuckinc: 0
+  hpIncrease: 0
+  lifeIncrease: 0
+  effect: {fileID: 0}
+  tiers: 0
+  type: 0
+  equipment: 0

@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour
     public float health = 100f;
     public float defense = 10f;
     bool attackDone = false;
-    public float evadePercent = 0f;
     public GameObject winPanel;
     void Update()
     {

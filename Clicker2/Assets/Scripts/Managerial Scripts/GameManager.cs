@@ -43,27 +43,55 @@ public class GameManager : MonoBehaviour
         if(!currentTurn)
         {
             currentTurn = true;
-            player.currentHp -= (float)Mathf.RoundToInt(damage - (Random.value * player.permDefense));
-            Debug.Log("Player " + player.currentHp);
+            float evadeValue = Random.value;
+            if(evadeValue > player.evadePercent/100)
+            {
+                CriticalDamage(player.criticalAttackPercentage/100, damage);
+                player.currentHp -= (float)Mathf.RoundToInt(damage - (Random.value * player.permDefense));
+                Debug.Log("Player " + player.currentHp);
+                WriterScript.Instance.Debuging("Enemy Hit You, " + "You : " + player.currentHp.ToString());
+            }
         }
         else if(currentTurn)
         {
             currentTurn = false;
-            if(tempType != -1 && tempType == (int)myEnemyObj.weakAgainst)
+            float evadeValue = Random.value;
+            if(evadeValue > myEnemyObj.evadePercent/100)
             {
-                enemy.health -= (float)Mathf.RoundToInt(((player.accuracyPercent/100+1 - enemy.evadePercent/100) *damage) -(Random.value * enemy.defense));
-                tempType = -1;
+                if(tempType != -1 && (tempType == (int)myEnemyObj.weakAgainst|| tempType == (int)myEnemyObj.weakAgainst2))
+                {
+                    CriticalDamage(myEnemyObj.criticalAttackPercentage/100, damage);
+                    enemy.health -= (float)Mathf.RoundToInt(((player.accuracyPercent/100+1)*damage) -(Random.value * enemy.defense));
+                    tempType = -1;
+                }
+                else if(tempType != -1 && (tempType == (int)myEnemyObj.strongAgainst||tempType == (int)myEnemyObj.strongAgainst2))
+                {
+                    CriticalDamage(myEnemyObj.criticalAttackPercentage/100, damage);
+                    enemy.health -= (float)Mathf.RoundToInt((player.accuracyPercent/100 - Random.value) *damage);
+                    tempType = -1;
+                }
+                else
+                {
+                    CriticalDamage(myEnemyObj.criticalAttackPercentage/100, damage);
+                    enemy.health -= (float)Mathf.RoundToInt(damage);
+                }
+                Debug.Log("Enemy " + enemy.health);
             }
-            else if(tempType != -1 && tempType == (int)myEnemyObj.strongAgainst)
+        }
+    }
+    void CriticalDamage(float toCheck, float damage)
+    {
+        float criticalControl = Random.value;
+        if(criticalControl > toCheck)
+        {
+            if(!currentTurn)
             {
-                enemy.health -= (float)Mathf.RoundToInt((player.accuracyPercent/100 - Random.value) *damage);
-                tempType = -1;
+                enemy.health -= (float)Mathf.RoundToInt((myEnemyObj.criticalAttackMultiplier-1)*(((player.accuracyPercent/100+1)*damage) -(Random.value * enemy.defense)));
             }
-            else
+            else if(currentTurn)
             {
-                enemy.health -= (float)Mathf.RoundToInt(damage);
+                player.currentHp -= (float)Mathf.RoundToInt((player.criticalAttackMultiplier-1)*(damage - (Random.value * player.permDefense)));
             }
-            Debug.Log("Enemy " + enemy.health);
         }
     }
     //Slot Instantiation
@@ -104,8 +132,6 @@ public class GameManager : MonoBehaviour
         enemy.attack = myEnemyObj.attack;
         enemy.health = myEnemyObj.health;
         enemy.defense = myEnemyObj.defense;
-        enemy.evadePercent = myEnemyObj.evade;
-
     }
     //Gold Related methods
     public void RemoveGold(float coins)

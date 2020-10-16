@@ -33,7 +33,22 @@ public class AttackButtonScript : MonoBehaviour
             {
                 GameManager.Instance.tempType = (int)myObj.type;
             }
-            GameManager.Instance.DoDamage(GameManager.Instance.player.permStrength + myObj.strength);
+            //Damage Block
+            float luckTime = Random.value;
+            if(GameManager.Instance.player.permanentLuck/100 + myObj.luckPercent/100 < luckTime)
+            {
+                GameManager.Instance.DoDamage(1.5f * (GameManager.Instance.player.permStrength + myObj.strength));
+            }
+            else if(myObj.healPower != 0)
+            {
+                GameManager.Instance.player.currentHp += myObj.healPower;
+            }
+            else
+            {
+                GameManager.Instance.DoDamage(GameManager.Instance.player.permStrength + myObj.strength);
+            }
+            WriterScript.Instance.Debuging("You attacked the enemy with " + myObj.iconTitle + " Enemy : " + GameManager.Instance.enemy.health.ToString());
+            //Damage Block Ends
             if(!myObj.infinite)
             {
                 myObj.amount -=1;

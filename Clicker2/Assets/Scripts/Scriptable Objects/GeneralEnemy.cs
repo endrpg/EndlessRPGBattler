@@ -13,7 +13,7 @@ public class GeneralEnemy : ScriptableObject
     public float attack;
     public float defense;
     public float goldToWin;
-    public float evade;
+    public float evadePercent;
     public float criticalAttackPercentage;
     public float criticalAttackMultiplier;
 
@@ -21,63 +21,41 @@ public class GeneralEnemy : ScriptableObject
     public StrongAgainst strongAgainst;
     public WeakAgainst weakAgainst2;
     public StrongAgainst strongAgainst2;
-    public WeaponStrong weaponStrong;
-    public WeaponWeak weaponWeak;
     public specialItemDropped ItemDrop;
     public enum WeakAgainst
     {
-        None,
         Earth,
         Fire,
         Water,
+        None,
         Wind,
         Electric,
         Dark,
-        Holy,
-        Normal
+        Holy
     }
     public enum StrongAgainst
     {
-        None,
         Earth,
         Fire,
         Water,
+        None,
         Wind,
         Electric,
         Dark,
-        Holy,
-        Normal
-    }
-    public enum WeaponStrong
-    {
-        None, 
-        axe,
-        lance,
-        dagger,
-        sword,
-        bow
-    }
-    public enum WeaponWeak
-    {
-        None,
-        axe,
-        lance,
-        dagger,
-        sword,
-        bow
+        Holy
     }
     public enum specialItemDropped
     {
-       none,
-       item1,
-       item2,
-       item3,
-       item4,
-       item5,
-       item6,
-       item7,
-       item8,
-       item9,
-       item10
+        none,
+        item1,
+        item2,
+        item3,
+        item4,
+        item5,
+        item6,
+        item7,
+        item8,
+        item9,
+        item10
     }
 }

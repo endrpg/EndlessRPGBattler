@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e2d81d8c1bd5143a99cb489a6f34c2, type: 3}
   m_Name: IconCreator
   m_EditorClassIdentifier: 
-  iconSprite: {fileID: 0}
+  iconSprite: {fileID: 21300000, guid: 50c4abf1598961c499a19294e0f8e0f1, type: 3}
   iconTitle: 
   iconDescription: 
   strength: 0
   defense: 0
   accuracy: 0
-  dodge: 0
-  luck: 0
+  luckPercent: 0
   criticalAtkpercentage: 0
   critmultiplier: 0
   healPower: 0
@@ -35,7 +34,6 @@ MonoBehaviour:
   hpIncrease: 0
   lifeIncrease: 0
   effect: {fileID: 0}
-  tiers: 0
+  tiers: 4
   type: 0
   equipment: 0
-  weapontype: 0

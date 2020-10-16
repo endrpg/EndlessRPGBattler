@@ -11,8 +11,7 @@ public class IconCreator : ScriptableObject
     public float strength;
     public float defense;
     public float accuracy;
-    public float dodge;
-    public float luck;
+    public float luckPercent;
     public float criticalAtkpercentage;
     public float critmultiplier;
     public float healPower;
@@ -40,15 +39,14 @@ public class IconCreator : ScriptableObject
     [System.Serializable]
     public enum Type
     {
-        None, 
         Earth,
         Fire,
         Water,
+        None,
         Wind,
         Electric,
         Dark,
-        Holy,
-        Normal
+        Holy
     }
     [System.Serializable]
     public enum Equipment
@@ -65,14 +63,4 @@ public class IconCreator : ScriptableObject
     public Tiers tiers;
     public Type type;
     public Equipment equipment;
-    public WeaponType weapontype;
-    public enum WeaponType
-    {
-        None,
-        axe,
-        lance,
-        dagger,
-        sword,
-        bow
-    }
 }
