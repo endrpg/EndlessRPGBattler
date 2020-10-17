@@ -39,10 +39,10 @@ public class IconCreator : ScriptableObject
     [System.Serializable]
     public enum Type
     {
+        None,
         Earth,
         Fire,
         Water,
-        None,
         Wind,
         Electric,
         Dark,

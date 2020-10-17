@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e2d81d8c1bd5143a99cb489a6f34c2, type: 3}
+  m_Name: icon267
+  m_EditorClassIdentifier: 
+  iconSprite: {fileID: 21300000, guid: e917d4c95004787479d7fe92b7a26909, type: 3}
+  iconTitle: heart up
+  iconDescription: 
+  strength: 0
+  defense: 0
+  accuracy: 0
+  luckPercent: 0
+  criticalAtkpercentage: 0
+  critmultiplier: 0
+  healPower: 0
+  amount: 1
+  maxAmount: 1
+  price: 111
+  infinite: 0
+  permanentStrengthInc: 1
+  permanentDefenseInc: 1
+  permanentAccuracyInc: 1
+  permanentDodgeInc: 1
+  permanentLuckinc: 1
+  hpIncrease: 1
+  lifeIncrease: 1
+  effect: {fileID: 0}
+  tiers: 0
+  type: 0
+  equipment: 0
