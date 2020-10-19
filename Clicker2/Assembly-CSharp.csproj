@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Sleeping.cs" />
     <Compile Include="Assets\Scripts\Managerial Scripts\WriterScript.cs" />
+    <Compile Include="Assets\MainMenu\TestAudioButton.cs" />
     <Compile Include="Assets\Scripts\ConfirmationPanel\DenyScript.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\GeneralEnemy.cs" />
     <Compile Include="Assets\EquipmentScript.cs" />
@@ -68,11 +69,12 @@
     <Compile Include="Assets\Scripts\Managerial Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managerial Scripts\StoreManager.cs" />
     <Compile Include="Assets\EquipmentManager.cs" />
-    <Compile Include="Assets\Scripts\AttackButtonScript.cs" />
-    <Compile Include="Assets\Scripts\Scriptable Objects\IconCreator.cs" />
-    <Compile Include="Assets\MainMenu\TestAudioButton.cs" />
     <Compile Include="Assets\MainMenu\SetVolume.cs" />
     <Compile Include="Assets\MainMenu\MainMenuScript.cs" />
+    <Compile Include="Assets\MainMenu\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\AttackButtonScript.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\IconCreator.cs" />
+    <Compile Include="Assets\MainMenu\GraphicsSettings.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
