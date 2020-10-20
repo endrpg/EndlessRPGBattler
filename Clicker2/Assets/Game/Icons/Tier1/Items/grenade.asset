@@ -22,8 +22,8 @@ MonoBehaviour:
   criticalAtkpercentage: 0
   critmultiplier: 0
   healPower: 0
-  amount: 0
-  maxAmount: 0
+  amount: 5
+  maxAmount: 5
   price: 10
   infinite: 0
   permanentStrengthInc: 0

@@ -21,7 +21,7 @@ MonoBehaviour:
   luckPercent: 0
   criticalAtkpercentage: 0
   critmultiplier: 0
-  healPower: 500
+  healPower: 100
   amount: 5
   maxAmount: 5
   price: 25
