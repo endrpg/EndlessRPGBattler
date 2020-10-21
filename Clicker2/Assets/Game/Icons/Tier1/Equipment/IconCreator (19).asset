@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: IconCreator (19)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: 1133427acea7b284fa493fda60090fbc, type: 3}
-  iconTitle: 
-  iconDescription: 
+  iconTitle: The Butterfly
+  iconDescription: Could have chosen a better color.
   strength: 0
   defense: 0
   accuracy: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
   price: 50
   infinite: 1
   permanentStrengthInc: 0
-  permanentDefenseInc: 25
+  permanentDefenseInc: 12
   permanentAccuracyInc: 0
   permanentDodgeInc: 0
   permanentLuckinc: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 2

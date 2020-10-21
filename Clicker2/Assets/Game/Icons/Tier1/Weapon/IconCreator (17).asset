@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IconCreator (17)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: 96353f65a0106dc409c3434c811d67ff, type: 3}
-  iconTitle: 
+  iconTitle: Wood Stick
   iconDescription: 
   strength: 0
   defense: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 1

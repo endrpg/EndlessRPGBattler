@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: IconCreator (13)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: 69d3bb963b684534f98261e75d9e09d8, type: 3}
-  iconTitle: 
-  iconDescription: 
+  iconTitle: Ten Gallon Hat
+  iconDescription: Keeps the sun out of your eyes
   strength: 0
   defense: 0
   accuracy: 0
@@ -24,11 +24,11 @@ MonoBehaviour:
   healPower: 0
   amount: 0
   maxAmount: 0
-  price: 50
+  price: 88
   infinite: 1
   permanentStrengthInc: 0
-  permanentDefenseInc: 25
-  permanentAccuracyInc: 0
+  permanentDefenseInc: 5
+  permanentAccuracyInc: 5
   permanentDodgeInc: 0
   permanentLuckinc: 0
   hpIncrease: 0

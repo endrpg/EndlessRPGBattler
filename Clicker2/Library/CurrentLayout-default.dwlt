@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Inspector
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 126
+  controlID: 125
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 780.8
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 31
+  controlID: 100
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 32
+  controlID: 101
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -345,21 +345,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/Icons/Tier5/Weapon
+    - Assets/Game/Icons/Tier1/Weapon
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 32
   m_LastFolders:
-  - Assets/Game/Icons/Tier5/Weapon
+  - Assets/Game/Icons/Tier1/Weapon
   m_LastFoldersGridSize: 32
   m_LastProjectPath: C:\Users\Mike\Documents\GitHub\TheFinalBattleRPG\EndlessRPGBattler\Clicker2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 219}
-    m_SelectedIDs: 78420000
-    m_LastClickedID: 17016
-    m_ExpandedIDs: 000000002a4100002c4100002e41000030410000324100003441000036410000384100003a4100003c4100003e41000042410000444100001042000000ca9a3b
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: ac3f0000
+    m_LastClickedID: 16300
+    m_ExpandedIDs: 000000007a3f00007c3f00007e3f0000803f0000823f0000843f0000863f0000883f00008a3f00008c3f00008e3f0000963f00009a3f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +387,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002a4100002c4100002e41000030410000324100003441000036410000384100003a4100003c4100003e410000
+    m_ExpandedIDs: 000000007a3f00007c3f00007e3f0000803f0000823f0000843f0000863f0000883f00008a3f00008c3f00008e3f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -415,7 +415,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000664c0000224d0000404e0000d84100005e50000008510000ec510000
+    m_ExpandedInstanceIDs: c6230000664c0000224d0000404e00005e50000008510000ec510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -511,9 +511,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 924400008e4a00008e490000ee460000424a000066480000724600008a460000d2470000a24a00004e470000ce4600003e460000364400004e440000
+      m_SelectedIDs: a6440000
       m_LastClickedID: 0
-      m_ExpandedIDs: a8efffff6a3e0000
+      m_ExpandedIDs: 3afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -711,7 +711,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -724,20 +724,20 @@ MonoBehaviour:
       y: 21
       width: 638.8
       height: 322.8
-    m_Scale: {x: 0.2521875, y: 0.2521875}
-    m_Translation: {x: 319.4, y: 161.4}
+    m_Scale: {x: 0.26859373, y: 0.26859373}
+    m_Translation: {x: 319.40002, y: 161.4}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1266.518
-      y: -640
-      width: 2533.036
-      height: 1280
+      x: -1189.1566
+      y: -600.90753
+      width: 2378.3132
+      height: 1201.8151
     m_MinimalGUI: 1
-  m_defaultScale: 0.2521875
+  m_defaultScale: 0.26859373
   m_LastWindowPixelSize: {x: 798.5, y: 429.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1

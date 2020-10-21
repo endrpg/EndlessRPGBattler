@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IconCreator (13)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: 67c86ccaf6cb9e14294bbf7f1f2a4f25, type: 3}
-  iconTitle: 
+  iconTitle: Shepherds Crook
   iconDescription: 
   strength: 0
   defense: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 1

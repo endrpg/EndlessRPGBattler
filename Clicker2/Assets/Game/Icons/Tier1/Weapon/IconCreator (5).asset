@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IconCreator (5)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: c1c33fe7b12b69745b40bd05afef2a4f, type: 3}
-  iconTitle: 
+  iconTitle: Light Oak Staff
   iconDescription: 
   strength: 0
   defense: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 1

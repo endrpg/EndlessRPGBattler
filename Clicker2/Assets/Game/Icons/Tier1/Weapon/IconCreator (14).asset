@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IconCreator (14)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: a090137e431af884cbf1e6f53deaadff, type: 3}
-  iconTitle: 
+  iconTitle: Sling
   iconDescription: 
   strength: 0
   defense: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 1

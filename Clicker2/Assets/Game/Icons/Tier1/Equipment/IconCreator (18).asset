@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: IconCreator (18)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: 8b38164873a53d14da3904c7451dbcac, type: 3}
-  iconTitle: 
-  iconDescription: 
+  iconTitle: Broken Shield of Might
+  iconDescription: This would have been perfect.
   strength: 0
   defense: 0
   accuracy: 0
@@ -24,10 +24,10 @@ MonoBehaviour:
   healPower: 0
   amount: 0
   maxAmount: 0
-  price: 50
+  price: 23
   infinite: 1
-  permanentStrengthInc: 0
-  permanentDefenseInc: 25
+  permanentStrengthInc: 2
+  permanentDefenseInc: 2
   permanentAccuracyInc: 0
   permanentDodgeInc: 0
   permanentLuckinc: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 2

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IconCreator (1)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: 29dbaf4ab1e5c5947a6e8ffbf2a01849, type: 3}
-  iconTitle: 
+  iconTitle: Baseball Bat
   iconDescription: 
   strength: 0
   defense: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 1

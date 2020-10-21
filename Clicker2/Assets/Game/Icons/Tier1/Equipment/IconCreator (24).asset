@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: IconCreator (24)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: e7836ad2868265440befa84904b79346, type: 3}
-  iconTitle: 
-  iconDescription: 
+  iconTitle: Leather Boots of Comfort
+  iconDescription: Not very protective
   strength: 0
   defense: 0
   accuracy: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
   price: 50
   infinite: 1
   permanentStrengthInc: 0
-  permanentDefenseInc: 25
+  permanentDefenseInc: 14
   permanentAccuracyInc: 0
   permanentDodgeInc: 0
   permanentLuckinc: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 6

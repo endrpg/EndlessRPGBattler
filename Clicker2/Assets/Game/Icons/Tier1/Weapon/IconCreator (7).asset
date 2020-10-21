@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IconCreator (7)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: ff83a7f16a5df9d4f828765b5a3fdbf8, type: 3}
-  iconTitle: 
+  iconTitle: Green Book
   iconDescription: 
   strength: 0
   defense: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 1

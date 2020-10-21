@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: IconCreator (10)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: 04389080996b855439aa11de26b979d1, type: 3}
-  iconTitle: 
-  iconDescription: 
+  iconTitle: Fur Clothing
+  iconDescription: Keeps you warm at night.
   strength: 0
   defense: 0
   accuracy: 0
@@ -24,16 +24,16 @@ MonoBehaviour:
   healPower: 0
   amount: 0
   maxAmount: 0
-  price: 50
+  price: 43
   infinite: 1
   permanentStrengthInc: 0
-  permanentDefenseInc: 25
+  permanentDefenseInc: 5
   permanentAccuracyInc: 0
   permanentDodgeInc: 0
   permanentLuckinc: 0
-  hpIncrease: 0
+  hpIncrease: 10
   lifeIncrease: 0
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 4

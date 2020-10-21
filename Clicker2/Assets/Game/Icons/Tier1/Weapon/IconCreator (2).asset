@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IconCreator (2)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: 651e702cb5600a84589b5641a651bba2, type: 3}
-  iconTitle: 
+  iconTitle: Boxing Gloves
   iconDescription: 
   strength: 0
   defense: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 1

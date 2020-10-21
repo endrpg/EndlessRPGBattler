@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IconCreator (12)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: 9f48c40ee655bd948bb0f08754aa0313, type: 3}
-  iconTitle: 
+  iconTitle: Torch
   iconDescription: 
   strength: 0
   defense: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 1

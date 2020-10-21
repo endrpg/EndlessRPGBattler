@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IconCreator (9)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: 636716a6d783a5f47b5ceb039bf019f5, type: 3}
-  iconTitle: 
+  iconTitle: Arrowhead Spear
   iconDescription: 
   strength: 0
   defense: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 1

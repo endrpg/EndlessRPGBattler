@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: IconCreator (8)
   m_EditorClassIdentifier: 
   iconSprite: {fileID: 21300000, guid: df1a80b71e588a045a4cd036084251f4, type: 3}
-  iconTitle: 
-  iconDescription: 
+  iconTitle: Headpiece
+  iconDescription: This is the way.
   strength: 0
   defense: 0
   accuracy: 0
@@ -26,8 +26,8 @@ MonoBehaviour:
   maxAmount: 0
   price: 50
   infinite: 1
-  permanentStrengthInc: 0
-  permanentDefenseInc: 25
+  permanentStrengthInc: 2
+  permanentDefenseInc: 8
   permanentAccuracyInc: 0
   permanentDodgeInc: 0
   permanentLuckinc: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   effect: {fileID: 0}
   tiers: 0
   type: 0
-  equipment: 0
+  equipment: 3
